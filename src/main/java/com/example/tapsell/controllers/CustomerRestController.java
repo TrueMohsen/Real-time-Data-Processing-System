@@ -35,7 +35,7 @@ public class CustomerRestController {
     }
 
     @GetMapping("/{id}")
-    public Customer getItem(@PathVariable("id") String id){
+    public Customer getICustomer(@PathVariable("id") String id){
         return customerRepository.getById(id);
     }
 }
